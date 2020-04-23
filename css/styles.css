@@ -1,0 +1,30 @@
+body {
+
+}
+
+header {
+	/*background-color: blue;*/
+	padding: 40px;
+}
+
+section {
+	padding: 40px;
+}
+
+.logo-wrapper {
+	width: 90px;
+	height: 90px;
+}
+
+section {
+	width: 100%;
+}
+
+.content {
+	width: 100%;
+}
+
+.social-links a {
+	color: #000000;
+	margin: 0px 5px;
+}
