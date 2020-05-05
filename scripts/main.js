@@ -1,7 +1,26 @@
 var logo = document.getElementById('logo-wrapper')
 
 function ready() {
-	animateLogo()
+	// animateLogo()
+	animateHeading()
+}
+
+function animateHeading() {
+	// Wrap every letter in a span
+	var textWrapper = document.querySelector('.heading .letters');
+	textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+	anime.timeline({
+		// loop: true
+	})
+	.add({
+		targets: '.heading .letter',
+		opacity: [0,1],
+		easing: "easeOutExpo",
+		duration: 500,
+		offset: '-=775',
+		delay: (el, i) => 34 * (i+1)
+	})
 }
 
 function animateLogo() {

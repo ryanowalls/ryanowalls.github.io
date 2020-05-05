@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=Roboto+Mono:wght@500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=Roboto+Mono:wght@500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
-	line-height: 1.5;
+	line-height: 1;
+	text-align: center;
 }
 
 h1 {
 	/*font-family: 'Poppins', sans-serif;*/
-	font-family: 'Abril Fatface', cursive;
-	font-weight: 400;
+	/*font-family: 'Abril Fatface', cursive;*/
+	font-weight: 900;
 	font-size: 5rem;
+	margin-top: 0.4em;
 	margin-bottom: 0.5em;
+	font-style: italic;
 }
 
 p {
