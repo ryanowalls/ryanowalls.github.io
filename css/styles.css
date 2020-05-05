@@ -74,3 +74,11 @@ a {
 .social:not(:first-child) {
 	margin-left: 30px;
 }
+
+.heading-letters {
+	display: block;
+}
+
+.letters2 {
+	margin-top: -50px;
+}
