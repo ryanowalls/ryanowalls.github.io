@@ -1,11 +1,8 @@
 var logo = document.getElementById('logo-wrapper')
 
 function ready() {
-
 	setVH()
-
 	overlapHeadings()
-
 	animateHeading()
 }
 
