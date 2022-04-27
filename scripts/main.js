@@ -10,8 +10,29 @@ window.addEventListener('resize', function() {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    positionPolaroids();
 });
 
 function init() {
-	
+	positionPolaroids();
+}
+
+function positionPolaroids() {
+    var polaroid1 = $('.polaroid-wrapper').get(0);
+    var polaroid2 = $('.polaroid-wrapper').get(1);
+    var polaroid3 = $('.polaroid-wrapper').get(2);
+    var polaroidWidth = $('.polaroid').width();
+    var polaroidHeight = $('.polaroid').height();
+    
+    var logoOffset = $('.logo-wrapper').offset();
+    var logoWidth = $('.logo-wrapper').width();
+    var logoHeight = $('.logo-wrapper').height();
+
+    $(polaroid1).css('left', logoOffset.left + logoWidth - 20);
+    $(polaroid1).css('top', logoOffset.top);
+    $(polaroid2).css('left', logoOffset.left - polaroidWidth + 15);
+    $(polaroid2).css('top', logoOffset.top + 20);
+    $(polaroid3).css('left', logoOffset.left + (logoWidth / 2) - (polaroidWidth / 2));
+    $(polaroid3).css('top', logoOffset.top - polaroidHeight + 30);
+    console.log(logoOffset)
 }
