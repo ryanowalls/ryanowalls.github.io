@@ -78,6 +78,10 @@ p {
 	margin: 2rem;
 }
 
+.buttons-container a {
+	text-decoration: none;
+}
+
 .btn {
 	cursor: pointer;
 	font-size: 0.8em;
