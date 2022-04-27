@@ -103,6 +103,16 @@ p {
 	background: var(--button-hover-color);
 }
 
+.btn-social img {
+	width: 1.1em;
+	height: auto;
+}
+
+.icon-opensea {
+	margin-left: 0.05em;
+	margin-bottom: 0.15em;
+}
+
 .fa-twitter {
 	margin-left: 0.1em;
 }
